@@ -11,9 +11,17 @@
 <body>
   <div class="container mx-auto p-6">
     <h1 class="text-3xl font-bold mb-4">Image Upload Gallery</h1>
-    <button id="upload-btn" class="bg-blue-500 text-white px-4 py-2 rounded">Upload Images</button>
+    <button id="upload-btn" class="bg-blue-500 text-white px-4 py-2 rounded">Upload Image</button>
     <div id="gallery" class="grid grid-cols-3 gap-4 mt-6">
       <!-- Images will be displayed here -->
+    </div>
+  </div>
+
+  <!-- Modal to Zoom Image -->
+  <div id="image-modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center hidden">
+    <div class="relative w-full h-full max-w-4xl">
+      <img id="modal-image" class="w-full h-full object-contain" src="" alt="Zoomed Image">
+      <button id="close-modal" class="absolute top-4 right-4 text-white text-3xl">×</button>
     </div>
   </div>
 </body>
